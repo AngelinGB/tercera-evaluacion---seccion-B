@@ -115,7 +115,6 @@ int main() {
                     case DERECHA:   next_x++; break;
                 }
 
-                // 1. Verifica Colisión
                 if (!verificarColision(next_x, next_y)) {
                     
                   
@@ -131,7 +130,7 @@ int main() {
                 if (x == SALIDA_X && y == SALIDA_Y) {
                     system("cls");
                     gotoxy(8, 7);
-                    cout << "¡COMPLETADO! LABERINTO SUPERADO.";
+                    cout << "Â¡COMPLETADO! LABERINTO SUPERADO.";
                     getch(); 
                     tecla = ESCAPE; 
                 }
@@ -143,3 +142,4 @@ int main() {
     system("cls");
     return 0;
 }
+
